@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #363030;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #363030;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "cat que que que"
+    "first-q first-q100 first-q200 first-q300"
+    "second-q second-q100 second-q200 second-q300"
+    "third-q third-q100 third-q200 third-q300";
+  background-color: #414141;
+  text-align: center;
+  box-shadow: 0 0 10000px 20px #a05d91;
+  inline-size: 1000px;
+  block-size: 500px;
+  padding: 10px;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 2px solid #fff;
+}
+
+.main-q {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "header header header header"
+    "que que que que"
+    "que que que que"
+    "back back back back";
+  background-color: #414141;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  box-shadow: 0 0 10000px 20px #a05d91;
+  inline-size: 1000px;
+  block-size: 500px;
+  padding: 10px;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 2px solid #fff;
+}
+
+.head,
+.body {
+  background-color: #eee;
+  inline-size: calc(100% - 5px);
+  block-size: calc(100% - 5px);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body {
+  font-size: 17px;
+}
+
+.cat {
+  grid-area: cat;
+  border-radius: 20px 0 0 0;
+}
+
+.que {
+  grid-area: que;
+  border-radius: 0 20px 0 0;
+}
+
+.first-q {
+  grid-area: first-q;
+}
+
+.first-q100 {
+  grid-area: first-q100;
+}
+
+.first-q200 {
+  grid-area: first-q200;
+}
+
+.first-q300 {
+  grid-area: first-q300;
+}
+
+.second-q {
+  grid-area: second-q;
+}
+
+.second-q100 {
+  grid-area: second-q100;
+}
+
+.second-q200 {
+  grid-area: second-q200;
+}
+
+.second-q300 {
+  grid-area: second-q300;
+}
+
+.third-q {
+  grid-area: third-q;
+  border-radius: 0 0 0 20px;
+}
+
+.third-q100 {
+  grid-area: third-q100;
+}
+
+.third-q200 {
+  grid-area: third-q200;
+}
+
+.third-q300 {
+  grid-area: third-q300;
+  border-radius: 0 0 20px 0;
+}
+
+.header {
+  grid-area: header;
+  border-radius: 20px 20px 0 0;
+}
+
+.qq {
+  padding: 30px;
+  font-size: 20px;
+  border-radius: 0;
+}
+
+.back {
+  grid-area: back;
+  border-radius: 0 0 20px 20px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: background-color 0.5s;
+}
+
+a:hover {
+  background-color: #cecdcd;
+}
