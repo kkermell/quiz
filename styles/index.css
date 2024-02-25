@@ -55,8 +55,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   box-shadow: 0 0 10000px 20px #a05d91;
-  inline-size: 1000px;
-  block-size: 500px;
+  inline-size: clamp(800px, 1000px, 100vw);
+  block-size: clamp(300px, 500px, 100vh);
   padding: 10px;
   justify-content: center;
   align-content: center;
