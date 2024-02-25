@@ -8,11 +8,24 @@
   </head>
   <body class="page">
     <main class="main-q">
-      <h2 class="head header">Продажа и передача оружия и боеприпасов 300</h2>
+      <h2 class="head header">Центральный рынок 300</h2>
       <p class="body que qq">
         Какие части оружия не должны иметь индивидуального номера?
+        <span class="answer-hidden"
+          >Ответ: Распылители, аэрозольные и другие устройства, снаряженные
+          слезоточивыми и раздражающими веществами.</span
+        >
       </p>
       <a href="./index.html" class="body back">Вернуться</a>
+      <button class="body answer">Ответ</button>
     </main>
+    <script>
+      const btn = document.querySelector(".answer");
+      const answer = document.querySelector(".answer-hidden");
+
+      btn.addEventListener("click", () => {
+        answer.classList.toggle("answer-is-on");
+      });
+    </script>
   </body>
 </html>

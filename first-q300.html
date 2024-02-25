@@ -8,12 +8,24 @@
   </head>
   <body class="page">
     <main class="main-q">
-      <h2 class="head header">Транспортировка оружия и боеприпасов 300</h2>
+      <h2 class="head header">Поезд Иркутск - Магадан 300</h2>
       <p class="body que qq">
-        Какой максимальный разрушенный вес для перевозки патронов в ручной клад
-        на водном и жд транспорте?
+        В каком количестве гражданин РФ имеет право транспортировать оружие и
+        патроны?
+        <span class="answer-hidden"
+          >Ответ: Не более 5 единиц оружия и 1000 единиц патронов.</span
+        >
       </p>
       <a href="./index.html" class="body back">Вернуться</a>
+      <button class="body answer">Ответ</button>
     </main>
+    <script>
+      const btn = document.querySelector(".answer");
+      const answer = document.querySelector(".answer-hidden");
+
+      btn.addEventListener("click", () => {
+        answer.classList.toggle("answer-is-on");
+      });
+    </script>
   </body>
 </html>

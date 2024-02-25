@@ -8,11 +8,21 @@
   </head>
   <body class="page">
     <main class="main-q">
-      <h2 class="head header">Изъятие и хранение оружия и боеприпасов 100</h2>
+      <h2 class="head header">Мешок Деда Мороза 100</h2>
       <p class="body que qq">
-        На какой срок мб изъяты оружие и патроны ОВД?
+        На какой срок можгут быть изъяты оружие и патроны ОВД?
+        <span class="answer-hidden">Ответ: до 4-х месяцев.</span>
       </p>
       <a href="./index.html" class="body back">Вернуться</a>
+      <button class="body answer">Ответ</button>
     </main>
+    <script>
+      const btn = document.querySelector(".answer");
+      const answer = document.querySelector(".answer-hidden");
+
+      btn.addEventListener("click", () => {
+        answer.classList.toggle("answer-is-on");
+      });
+    </script>
   </body>
 </html>

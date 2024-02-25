@@ -22,12 +22,13 @@ body {
 .main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   grid-template-areas:
     "cat que que que"
     "first-q first-q100 first-q200 first-q300"
     "second-q second-q100 second-q200 second-q300"
-    "third-q third-q100 third-q200 third-q300";
+    "third-q third-q100 third-q200 third-q300"
+    "fourth-q fourth-q100 fourth-q200 fourth-q300";
   background-color: #414141;
   text-align: center;
   box-shadow: 0 0 10000px 20px #a05d91;
@@ -50,7 +51,7 @@ body {
     "header header header header"
     "que que que que"
     "que que que que"
-    "back back back back";
+    "back back answer answer";
   background-color: #414141;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
@@ -125,7 +126,6 @@ body {
 
 .third-q {
   grid-area: third-q;
-  border-radius: 0 0 0 20px;
 }
 
 .third-q100 {
@@ -138,6 +138,23 @@ body {
 
 .third-q300 {
   grid-area: third-q300;
+}
+
+.fourth-q {
+  grid-area: fourth-q;
+  border-radius: 0 0 0 20px;
+}
+
+.fourth-q100 {
+  grid-area: fourth-q100;
+}
+
+.fourth-q200 {
+  grid-area: fourth-q200;
+}
+
+.fourth-q300 {
+  grid-area: fourth-q300;
   border-radius: 0 0 20px 0;
 }
 
@@ -150,11 +167,37 @@ body {
   padding: 30px;
   font-size: 20px;
   border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .back {
   grid-area: back;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 0 20px;
+}
+.answer {
+  grid-area: answer;
+  border: none;
+  line-height: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  border-radius: 0 0 20px 0;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+
+.answer:hover {
+  background-color: #cecdcd;
+}
+
+.answer-hidden {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.answer-is-on {
+  opacity: 100%;
 }
 
 a {

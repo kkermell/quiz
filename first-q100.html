@@ -8,12 +8,22 @@
   </head>
   <body class="page">
     <main class="main-q">
-      <h2 class="head header">Транспортировка оружия и боеприпасов 100</h2>
+      <h2 class="head header">Поезд Иркутск - Магадан 100</h2>
       <p class="body que qq">
-        Если транспортировка оружия осуществляется колонной больше двух машин,
-        сколько человек входит в группу сопровождения?
+        Какой максимальный разрешенный вес для перевозки патронов в ручной клад
+        на водном и железнодорожном транспорте?
+        <span class="answer-hidden">Ответ: 5 кг.</span>
       </p>
       <a href="./index.html" class="body back">Вернуться</a>
+      <button class="body answer">Ответ</button>
     </main>
+    <script>
+      const btn = document.querySelector(".answer");
+      const answer = document.querySelector(".answer-hidden");
+
+      btn.addEventListener("click", () => {
+        answer.classList.toggle("answer-is-on");
+      });
+    </script>
   </body>
 </html>
